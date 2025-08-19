@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do-list</title>
-</head>
-<body>
-    <header><h1>Minha Lista de Tarefas</h1></header>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <section id="geral">
+        <header>Minha Lista de Tarefas</header>
+        
+        <section id="entradaTarefas">
+            <input type="text" placeholder='Digite a Tarefa'name="cxEntrada" id="cxEntrada" />
 
-    <section id="entradatarefas">
-        <input type="text" name="cxEntrada" id="cxEntrada"> 
-        <input type="button" value="Adicionar" id="adicionarTarefa" onclick="adicionar()">
+            <input
+            type="button"
+            value="Adicionar"
+            id="adicionarTarefa"
+            onclick="adicionar()"
+            />
+        </section>
+        <section id="tarefas">
+            <h2>Lista de Tarefas</h2>
+            <ul>
+                <li>✒️ Teste <span>✅</span></li>
+            </ul>
+        </section>
     </section>
-    <section id="tarefas">
-        <h2>Lista de Tarefas</h2>
-    </section>
-</body>
+    
+  </body>
+
+  
 </html>
