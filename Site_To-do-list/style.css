@@ -21,8 +21,8 @@ section#geral{
     align-items: center;    
     flex-shrink: 1;
     flex-grow: 1;
-    margin-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;    
+    padding-bottom: 30px;
 
     width: 70vw;
     max-width: 700px;
@@ -34,15 +34,14 @@ section#geral{
 
 header{
     
-    width: 90%;
-    
-    text-align: center;
-    font-size: 30px;
-    color: rgb(115, 3, 149);
+    margin: 0px;
+     
+    width: 90%;    
     padding: 15px;
 }
 
 img{
+    padding-left: 5px;
     width: 100%;
     margin: 0px;
 }
@@ -85,7 +84,7 @@ input#adicionarTarefa{ /* botão */
     
     background-color: rgb(115, 3, 149);
 
-    font-size: 15px;
+    font-size: 20px;
     color:#fff;
 
     cursor: pointer;
@@ -203,10 +202,58 @@ input#Limpar{
     color:rgb(67, 10, 132);
 
     cursor: pointer;
+}
+
+@media(max-width: 720px) 
+{
+    header{
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    section#geral{
+       
+    
+    margin-top:15px;/*---*/ 
+    margin-top: 60px;
+    padding-bottom: 20px;   
+
+    width: 90vw;
+    }
+
+    section#entradaTarefas{  /* junto caixa de texto e botão */
+    
+    flex-direction: column;/*---*/
+
+    width: 90%;  
+    
+    }/****************/
+
+    input#cxEntrada{/* caixa de texto input */
+    
+    width: 90%;  
+
+    }
+    input#adicionarTarefa{ /* botão */
+        
+    height: 40px;/*---*/
+    width: 70%;/*---*/    
+    margin-top: 15px;
+
+    font-size: 20px;    
+
+    cursor: pointer;
+}
 
 
+    input#Limpar{
+    height: 30px;
+    width: 50%;
+    
 
-
-
+    
+    font-size: 15px;
+    color:rgb(67, 10, 132);
+    
+    }
     
 }
