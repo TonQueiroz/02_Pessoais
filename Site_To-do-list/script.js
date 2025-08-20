@@ -45,7 +45,7 @@ function ConcluirTarefa(tagSpanTatefa){
 
     let listaConcluida = document.querySelector('ul#tarefasConcluídas')
 
-    listaConcluida.style.display = 'block'
+    listaConcluida.style.display = 'flex'
 
     listaConcluida.appendChild(tarefaConcluída)
 
