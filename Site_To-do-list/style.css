@@ -1,11 +1,17 @@
+
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
  
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     background-color: rgb(40, 41, 41);
+    background-image: url(img/ChatGPT\ Image\ 19\ de\ ago.\ de\ 2025\,\ 19_53_39.png);
+    background-size: cover;
+    background-position: center;
 }
 
 section#geral{
@@ -14,13 +20,16 @@ section#geral{
     flex-direction: column;
     align-items: center;    
     flex-shrink: 1;
-    flex-grow: 1; 
+    flex-grow: 1;
+    margin-top: 30px;
+    padding-bottom: 10px;
 
     width: 70vw;
     max-width: 700px;
-    min-height: 90vh;    
+    height: auto;
+    border-radius: 20px;    
 
-    background-color: rgb(87, 87, 87); 
+    background-color: rgba(87, 87, 87, 0.707); 
 }
 
 header{
@@ -31,6 +40,11 @@ header{
     font-size: 30px;
     color: rgb(115, 3, 149);
     padding: 15px;
+}
+
+img{
+    width: 100%;
+    margin: 0px;
 }
 
 
@@ -64,13 +78,14 @@ outline: none;
 input#adicionarTarefa{ /* botão */
     height: 50px;
     width: 25%;
+    margin-left: 5px;
 
     border: 1px solid rgb(115, 3, 149);
     border-radius: 8px;
     
     background-color: rgb(115, 3, 149);
 
-    font-size: 15px;
+    font-size: 12px;
     color:#fff;
 
     cursor: pointer;
@@ -85,6 +100,9 @@ input#adicionarTarefa:hover{
 section#tarefas{ 
     display: none; /*vira flex no clique*/
 
+    margin :  5px 0px 22px 0px;
+   
+    border-radius: 10px;
     flex-direction: column;
     align-items: center; 
 
@@ -99,31 +117,83 @@ h2 {
     
 }
 
-ul{    
-    margin: 10px;
-    width: 85%;
+ul{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
 
+    
+    width: 90%;
+    margin: 10px;
+    border-radius: 8px;
+    padding-inline-start:0;
+    padding: 5px;
     background-color: rgb(67, 10, 132);
     
 }
 
 li{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+
+    width: 95%;
             
-    padding: 10px;
-    margin:5px ;
+    padding: 0px;
+    margin:10px 0px 10px 0px ;
     border-radius: 5px;
 
     font-size: 20px;
     font-weight: bolder;  
-    color: #dcdcdc; 
+    color: #dcdcdc;
+   
+    
 }
 
-span{
-    cursor: pointer;     
+span.xcheck{
+    cursor: pointer;
+    margin-left: auto ;
+          
+}
+
+span.xdelete{
+    cursor: pointer;
+    margin-left: 8px;          
+}
+
+
+ul#tarefasConcluídas{
+    margin: 10px;
+    width: 90%;
+    display: none;
+
+    background-color: rgb(67, 10, 132);
+    text-decoration: line-through;
+    color:#505050 ;
 }
 
 
 
+input#Limpar{
+    height: 40px;
+    width: 25%;
+    min-width: 150px;
+    margin-bottom: 10px;
+
+    border: 1px solid rgb(115, 3, 149);
+    border-radius: 8px;
+    
+    background-color: #d9d9d9;
+
+    font-size: 15px;
+    color:rgb(67, 10, 132);
+
+    cursor: pointer;
+
+
+
+
+
+    
+}

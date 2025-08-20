@@ -9,7 +9,7 @@
   </head>
   <body>
     <section id="geral">
-        <header>Minha Lista de Tarefas</header>
+        <header> <img src="img/coollogo_com-4825421.png" alt="" srcset=""></header>
         
         <section id="entradaTarefas">
             <input type="text" placeholder='Digite a Tarefa'name="cxEntrada" id="cxEntrada" />
@@ -23,9 +23,15 @@
         </section>
         <section id="tarefas">
             <h2>Lista de Tarefas</h2>
-            <ul>
+            <ul id="tarefasAFazer">
                 
             </ul>
+            
+            <h2 class="Pconcluidas">Concluídas</h2>
+            <ul class="Pconcluidas" id="tarefasConcluídas" >
+              
+            </ul>
+            <input type="button" value="Limpar Concluídas" id='Limpar' onclick="DeletarTarefas()">
         </section>
     </section>
     
