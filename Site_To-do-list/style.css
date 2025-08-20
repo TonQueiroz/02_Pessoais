@@ -204,6 +204,7 @@ input#Limpar{
     cursor: pointer;
 }
 
+/* Media query: ajustes para telas menores que 720px */
 @media(max-width: 720px) 
 {
     header{
@@ -213,7 +214,7 @@ input#Limpar{
     section#geral{
        
     
-    margin-top:15px;/*---*/ 
+    margin-top:15px; 
     margin-top: 60px;
     padding-bottom: 20px;   
 
@@ -222,7 +223,7 @@ input#Limpar{
 
     section#entradaTarefas{  /* junto caixa de texto e botão */
     
-    flex-direction: column;/*---*/
+    flex-direction: column;
 
     width: 90%;  
     
@@ -235,8 +236,8 @@ input#Limpar{
     }
     input#adicionarTarefa{ /* botão */
         
-    height: 40px;/*---*/
-    width: 70%;/*---*/    
+    height: 40px;
+    width: 70%;    
     margin-top: 15px;
 
     font-size: 20px;    
